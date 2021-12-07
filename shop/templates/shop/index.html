@@ -13,7 +13,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'shop/style.css' %}">
-    <title>Document</title>
+    <title>Product page</title>
 </head>
 
 <body>
@@ -46,6 +46,9 @@
                         <div class="card-text">
                             &#2547; {{ product.price }}
                         </div>
+                        <a href="/{{product.id}} " class="btn btn-warning">View</a>
+                        <a class="btn btn-danger .text-light">Add to Cart</a>
+                       
                     </div>
                 </div>
             </div>
